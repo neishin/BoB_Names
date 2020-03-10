@@ -1,0 +1,23 @@
+/* line 1, css/style.scss */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: 0;
+  text-align: center; }
+
+/* line 9, css/style.scss */
+h1 {
+  font-size: 32px;
+  margin: 32px; }
+
+/* line 14, css/style.scss */
+p {
+  margin-bottom: 10px;
+  font-size: 24px; }
+
+/* line 19, css/style.scss */
+option, select {
+  font-size: 24px; }
+
+/*# sourceMappingURL=style.css.map */
