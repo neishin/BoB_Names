@@ -20,4 +20,10 @@ p {
 option, select {
   font-size: 24px; }
 
+/* line 23, css/style.scss */
+#submit {
+  border: 1px black solid;
+  padding: 5px 20px;
+  font-size: 16px; }
+
 /*# sourceMappingURL=style.css.map */
