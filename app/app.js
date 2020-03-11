@@ -5,20 +5,25 @@ var color = "";
 var name = "";
 var surname = "";
 
-var bartanMaleNames = ["Adikar", "Arun", "Karoj", "Kirish", "Makit", "Nadit", "Parkresh", " Raghav", "Rakash"];
-var bartanFemaleNames = ["Adisha", "Aswina", "Kalyika", "Kaviya", "Kita", "Rahika", "Rashi", "Riya", "Seneha", "Shimya", "Vani"];
-var bartanSurnames = ["Arani", "Chabarti", "Dardhi", "Dewa", "Kapatia", "Khatri", "Pakshi", "Manabur"];
+var bartanMaleNames = ["Adikar", "Arun", "Karoj", "Kirish", "Makit", "Nadit", "Parkresh", " Raghav", "Rakash", "Ajay", "Aamir", "Arnesh", "Hari", "Deepak", "Devesh", "Kunal", "Naveen", "Lal", "Rahi", "Jayesh", "Rahul", "Rajesh", "Jai", "Ravi", "Zayn", "Sahil", "Sanjay", "Rudra", "Arjun", "Bodhi", "Samir", "Ayaan"];
+var bartanFemaleNames = ["Adisha", "Aswina", "Kalyika", "Kaviya", "Kita", "Rahika", "Rashi", "Riya", "Seneha", "Shimya", "Vani", "Advaita", "Akshara", "Harishita", "Irya", "Lavana", "Mahati", "Malavi", "Nitara", "Nimesha", "Niyati", "Prerita", "Raji", "Rashmika", "Samiha", "Shanaya", "Tishya", "Ukti", "Vaidehi"];
+var bartanSurnames = ["Arani", "Chabarti", "Dardhi", "Dewa", "Kapatia", "Khatri", "Pakshi", "Manabur", "Kumar", "Lal", "Sharma", "Shan", "Jai", "Pal", "Aggarwal", "Chander", "Nara", "Rai", "Goel", "Bhat", "Raji", "Anand", "Kapoor", "Chandra", "Patel", "Malhotra", "Arun", "Madan", "Prasad", "Rana", "Subramani", "Sethi", "Malik"];
 
-var oriteMaleTitles = ["Baronet", "Gallant", "Graf", "Landgrave", "Marquess", "Princips", "Viscount"];
-var oriteFemaleTitles = ["Contessa", "Dame", "Gallant","Landgrave", "Marquessa", "Reina", "Viscount"];
-var oriteMaleNames = ["Alben", "Anton", "Blas", "Cyprian", "Elrik", "Farian", "Leon", "Marilo", "Rubin", "Silvin"];
-var oriteFemaleNames = ["Aurora", "Chiara", "Emetta", "Hadriana", "Katovica", "Livia", "Millia", "Severina", "Tiana", "Valeria"];
-var oriteSurnames = ["Albrekt", "Garossi", "Loprio", "Martiko", "Rodano", "Sanicci", "Zardani"];
+//var oriteMaleTitles = ["Baronet", "Gallant", "Graf", "Landgrave", "Marquess", "Princips", "Viscount"];
+//var oriteFemaleTitles = ["Contessa", "Dame", "Gallant","Landgrave", "Marquessa", "Reina", "Viscount"];
 
-var panyarColor = ["Amber", "Azure", "Russet", "Sapphire", "Scarlet", "Silver", "Vermillion", "Violet"];
-var panyarMaleNames = ["Charging", "Dancing", "Flowing", "Growing", "Raging", "Standing", "Surging"];
-var panyarFemaleNames = ["Charging", "Dancing", "Flowing", "Growing", "Raging", "Standing", "Surging"];
-var panyarSurnames = ["Blaze", "Ember", "Flood", "Glade", "Grove", "Reef", "Storm", "Tempest", "Tide", "Weald", "Wind"];
+var oriteMaleTitles = ["Arcyksiążę", "Kniaź", "Ksiażę", "Delfin", "Grand", "Wojewoda", "Wicehrabia", "Markiz", "Margrabia", "Earl", "Palatyn", "Landgrabia", "Komes", "Hrabia", "Burgrabia", "Baron", "Baronet", "Rycerz", "Kawaler", "Lord", "Par", "Magnat", "Graf"];
+var oriteFemaleTitles = ["Contessa", "Dama", "Arcyksieżna", "Kniazini", "Markiza", "Księżna", "Wicehrabina", "Margrabianka", "Palatynka", "Komessa", "Hrabina", "Hrabianka", "Burgrabini", "Landgrabini", "Baronesa", "Baronetka", "Rycerka", "Lady", "Magnatka", "Grafini"];
+var oriteMaleNames = ["Alben", "Anton", "Blas", "Cyprian", "Elrik", "Farian", "Leon", "Marilo", "Rubin", "Silvin", "Ermenegildo", "Eufrasio", "Mansueto", "Fortunato", "Severino", "Domizio", "Calimero", "Adalberto", "Pere", "Symao", "Duarte", "Amrrique", "Gonçalvo"];
+var oriteFemaleNames = ["Aurora", "Chiara", "Emetta", "Hadriana", "Katovica", "Livia", "Millia", "Severina", "Tiana", "Valeria", "Giuseppina", "Gioconda", "Adalgisa", "Egidia", "Rosetta", "Chiarina", "Branca", "Leonor", "Ines", "Margarida", "Luana", "Constança", "Iris"];
+var oriteSurnames = ["Albrekt", "Garossi", "Loprio", "Martiko", "Rodano", "Sanicci", "Zardani", "Botelho", "Brandam", "Carneiro", "Coelho", "Drago", "Fogaça", "Velho", "Esposito", "Bianchi", "Ricci", "Cantú", "Trevisani", "Udinesi", "Astrella", "Bongiovanni", "Iadanza"];
+
+var panyarMaleColor = ["Bursztynowy", "Lazurowy", "Karmazynowy", "Szafirowy", "Szkarłatny", "Srebrny", "Cynobrowy", "Fioletowy", "Amarantowy", "Bordowy", "Błękitny", "Antracytowy", "Ametystowy", "Chabrowy", "Hebanowy", "Koralowy", "Kobaltowy", "Malachitowy", "Oranżowy", "Purpurowy", "Szafirowy", "Złocisty"];
+var panyarFemaleColor = ["Bursztynowa", "Lazurowa", "Karmazynowa", "Szafirowa", "Szkarłatna", "Srebrna", "Cynobrowa", "Fioletowy", "Amarantowa", "Bordowa", "Błękitna", "Antracytowa", "Ametystowa", "Chabrowa", "Hebanowa", "Koralowa", "Kobaltowa", "Malachitowa", "Oranżowa", "Purpurowa", "Szafirowa", "Złocista"];
+var panyarMaleNames = ["Szarżujący", "Tańczący", "Płynący", "Rosnący", "Szalejący", "Stojący", "Wypływający", "Szalony", "Walczący", "Spokojny", "Płaczący", "Radosny", "Smutny", "Zrozpaczony", "Szczęśliwy", "Pechowy", "Siedzący", "Wypatrujący", "Ukrywający", "Pobożny", "Miłujący"];
+var panyarFemaleNames = ["Szarżująca", "Tańcząca", "Płynąca", "Rosnąca", "Szalejąca", "Stojąca", "Wypływająca", "Szalona", "Walcząca", "Spokojna", "Płacząca", "Radosna", "Smutna", "Zrozpaczona", "Szczęśliwa", "Pechowa", "Siedząca", "Wypatrująca", "Ukrywająca", "Pobożna", "Miłująca"];
+var panyarMaleSurnames = ["Płomień", "Bursztyn", "Strumień", "Zagajnik", "Sztorm", "Przypływ", "Wiatr", "Ocean", "Liść", "Kamień", "Krzak", "Piorun", "Grzmot", "Szkwał", "Huk", "Śnieg", "Lód", "Szron", "Grad", "Krzemień", "Kanion", "Księżyc", "Ogień"];
+var panyarFemaleSurnames = ["Płomień", "Rzeka", "Polana", "Rafa", "Burza", "Błyskawica", "Rzeka", "Dziupla", "Niezapominajka", "Góra", "Przepaść", "Trawa", "Chmura", "Lawina", "Księżyc", "Gwiazda", "Słońce"];
 
 var zemyatiMaleNames = ["Adrimir", "Colay", "Gabridyor", "Liavel", "Maleksei", "Melislav", "Theonin", "Viltory"];
 var zemyatiFemaleNames = ["Alika", "Dania", "Emilinya", "Freriya", "Isalana", "Klarina", "Sverena", "Tatinika", "Valentina", "Zaya"];
@@ -115,14 +120,14 @@ $("#submit").click(function (event) {
         rollSurnames(oriteSurnames);
         console.log(title, name, surname)
     } else if (gender === "male" && heritage === "panyar") {
-        rollTitle(panyarColor);
+        rollTitle(panyarMaleColor);
         rollNames(panyarMaleNames);
-        rollSurnames(panyarSurnames);
+        rollSurnames(panyarMaleSurnames);
         console.log(title, name, surname)
     } else if (gender === "female" && heritage === "panyar") {
-        rollTitle(panyarColor);
+        rollTitle(panyarFemaleColor);
         rollNames(panyarFemaleNames);
-        rollSurnames(panyarSurnames);
+        rollSurnames(panyarFemaleSurnames);
         console.log(title, name, surname)
     } else if (gender === "male" && heritage === "zemyati") {
         rollNames(zemyatiMaleNames);
