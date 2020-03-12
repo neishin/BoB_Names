@@ -22,13 +22,13 @@ var panyarMaleColor = ["Bursztynowy", "Lazurowy", "Karmazynowy", "Szafirowy", "S
 var panyarFemaleColor = ["Bursztynowa", "Lazurowa", "Karmazynowa", "Szafirowa", "Szkarłatna", "Srebrna", "Cynobrowa", "Fioletowy", "Amarantowa", "Bordowa", "Błękitna", "Antracytowa", "Ametystowa", "Chabrowa", "Hebanowa", "Koralowa", "Kobaltowa", "Malachitowa", "Oranżowa", "Purpurowa", "Szafirowa", "Złocista"];
 var panyarMaleNames = ["Szarżujący", "Tańczący", "Płynący", "Rosnący", "Szalejący", "Stojący", "Wypływający", "Szalony", "Walczący", "Spokojny", "Płaczący", "Radosny", "Smutny", "Zrozpaczony", "Szczęśliwy", "Pechowy", "Siedzący", "Wypatrujący", "Ukrywający", "Pobożny", "Miłujący"];
 var panyarFemaleNames = ["Szarżująca", "Tańcząca", "Płynąca", "Rosnąca", "Szalejąca", "Stojąca", "Wypływająca", "Szalona", "Walcząca", "Spokojna", "Płacząca", "Radosna", "Smutna", "Zrozpaczona", "Szczęśliwa", "Pechowa", "Siedząca", "Wypatrująca", "Ukrywająca", "Pobożna", "Miłująca"];
-var panyarMaleSurnames = ["Płomień", "Bursztyn", "Strumień", "Zagajnik", "Sztorm", "Przypływ", "Wiatr", "Ocean", "Liść", "Kamień", "Krzak", "Piorun", "Grzmot", "Szkwał", "Huk", "Śnieg", "Lód", "Szron", "Grad", "Krzemień", "Kanion", "Księżyc", "Ogień"];
+var panyarMaleSurnames = ["Płomień", "Bursztyn", "Strumień", "Obłok", "Sztorm", "Przypływ", "Wiatr", "Ocean", "Liść", "Kamień", "Głaz", "Piorun", "Grzmot", "Szkwał", "Huk", "Śnieg", "Lód", "Szron", "Grad", "Krzemień", "Kanion", "Księżyc", "Ogień"];
 var panyarFemaleSurnames = ["Płomień", "Rzeka", "Polana", "Rafa", "Burza", "Błyskawica", "Rzeka", "Dziupla", "Niezapominajka", "Góra", "Przepaść", "Trawa", "Chmura", "Lawina", "Księżyc", "Gwiazda", "Słońce"];
 
-var zemyatiMaleNames = ["Adrimir", "Colay", "Gabridyor", "Liavel", "Maleksei", "Melislav", "Theonin", "Viltory"];
-var zemyatiFemaleNames = ["Alika", "Dania", "Emilinya", "Freriya", "Isalana", "Klarina", "Sverena", "Tatinika", "Valentina", "Zaya"];
-var zemyatiMaleSurnames = ["Adrimirevich", "Colayovich", "Gabridyorovich", "Liavelich", "Malekseievich", "Melislavovich", "Theoninevich", "Viltoryievich"];
-var zemyatiFemaleSurnames = ["Adrimiryevna", "Colayovna", "Gabridyorichna", "Liavelovna", "Malekseievna", "Melislavna", "Theoninovna", "Viltorichna"];
+var zemyatiMaleNames = ["Adrimir", "Colay", "Gabridyor", "Liavel", "Maleksei", "Melislav", "Theonin", "Viltory", "Andriy", "Bohuslav", "Boyko", "Fedir", "Hedeon", "Hryhoriy", "Kyrylo", "Mykola", "Oleksiy", "Vasyl", "Volodymyr", "Yevheniy"];
+var zemyatiFemaleNames = ["Alika", "Dania", "Emilinya", "Freriya", "Isalana", "Klarina", "Sverena", "Tatinika", "Valentina", "Zaya", "Alona", "Danica", "Dragana", "Galina", "Ljuba", "Mira", "Nadezhda", "Nevena", "Ruslana", "Snežana", "Svetlana", "Vesna", "Zora"];
+var zemyatiMaleSurnames = ["Adrimirevich", "Colayovich", "Gabridyorovich", "Liavelich", "Malekseievich", "Melislavovich", "Theoninevich", "Viltoryievich", "Hordiyenko", "Tereshchenko", "Shevchenko", "Kostyshyn", "Andrushevych", "Petrushevych", "Kovalyov", "Tarasov", "Zaitsev", "Solovyov"];
+var zemyatiFemaleSurnames = ["Adrimiryevna", "Colayovna", "Gabridyorichna", "Liavelovna", "Malekseievna", "Melislavna", "Theoninovna", "Viltorichna", "Romanykha", "Ivanykha", "Smirnova", "Popova", "Vassilieva", "Sokolova", "Alekseeva", "Semyonova", "Nikolayeva", "Nikitina", "Belyaeva", "Ilyina"];
 
 function rollTitle(table) {
     var checkTableLength = table.length;
@@ -89,18 +89,23 @@ $("#submit").click(function (event) {
     } else {
         gender = "female"
     }
-    var checkHeritage = $("#heritage").val();
-    if (checkHeritage === "random") {
+
+    heritage = $("#heritage").val();
+     if (heritage === "random") {
         rollHeritage();
-    } else if (checkHeritage === "bartan") {
-        heritage = "bartan"
-    } else if (checkHeritage === "orite") {
-        heritage = "orite"
-    } else if (checkHeritage === "panyar") {
-        heritage = "panyar"
-    } else {
-        heritage = "zemyati"
     }
+//    var checkHeritage = $("#heritage").val();
+//    if (checkHeritage === "random") {
+//        rollHeritage();
+//    } else if (checkHeritage === "bartan") {
+//        heritage = "bartan"
+//    } else if (checkHeritage === "orite") {
+//        heritage = "orite"
+//    } else if (checkHeritage === "panyar") {
+//        heritage = "panyar"
+//    } else {
+//        heritage = "zemyati"
+//    }
     if (gender === "male" && heritage === "bartan") {
         rollNames(bartanMaleNames);
         rollSurnames(bartanSurnames);
